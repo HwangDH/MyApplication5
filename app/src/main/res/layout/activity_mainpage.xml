@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/userchange"
+            android:background="@drawable/round_corner"
+
+            android:paddingTop="3dp"
+            android:layout_marginLeft="38dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="회원정보\n수정"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:id="@+id/dogchange"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+
+            android:paddingTop="3dp"
+            android:text="반려견정보수정"
+            android:background="@drawable/round_corner"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="19dp" />
+
+
+        <TextView
+            android:id="@+id/changecheckdate"
+            android:paddingTop="15dp"
+            android:background="@drawable/round_corner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="주기설정"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp">
+
+        <ImageView
+            android:layout_width="217dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/petlogo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="230dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+
+        <TextView
+            android:id="@+id/testresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:background="#353535"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:padding="16dp"
+            android:text="테스트 결과 확인"
+            android:textColor="#d9e5f3"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:padding="4dp"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
